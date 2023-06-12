@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+
+* {
+     box-sizing: border-box !important;
+     padding: 0%;
+     margin: 0%;
+}
+
+html, body, #map {
+     height: 100%;
+     font-family: "Open Sans", sans-serif;
+     color: #444444;
+  }
+
+a {
+     text-decoration: none;
+   }
+
+.social {
+     position: fixed;
+     bottom: 5%;
+     left: 5px;
+     z-index: 999;
+ }
+ 
+ .social ul {
+     margin: 0%;
+     padding: 0%;
+ }
+ 
+ .social ul li {
+     list-style: none;
+     margin: 5px 0px;
+ }
+ 
+ .social ul li a {
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 25px;
+     color: rgb(0, 0, 0);
+     background: rgba(255, 255, 255, 0.5);
+     border-radius: 50%;
+     display: block;
+     text-align: center;
+     position: relative;
+ }
+ .social ul li:nth-child(1) a {
+     color: #2AAD27;
+ }
+ 
+ .social ul li:nth-child(2) a {
+     color: #db8a20;
+ }
+ 
+ .social ul li:nth-child(3) a {
+     color: #d6d018;
+ }
+ 
+ .social ul li:nth-child(4) a {
+     color: #146C94;
+ }
+ 
+ .social ul li:hover:nth-child(1) a {
+     color: #22c51f;
+     transition: 0.5s;
+ }
+ 
+ .social ul li:hover:nth-child(2) a {
+     color: #ff9100;
+     transition: 0.5s;
+ }
+ 
+ .social ul li:hover:nth-child(3) a {
+     color: #e4dc08;
+     transition: 0.5s;
+ }
+ 
+ .social ul li:hover:nth-child(4) a {
+     color: #19A7CE;
+     transition: 0.5s;
+ }
+ 
+ .social ul li a span {
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     width: 150px;
+     height: 50px;
+     color: #404040;
+     font-weight: 700;
+     background: rgba(255, 255, 255, 0.7);
+     border-radius: 10px;
+     font-size: 15px;
+     opacity: 0;
+     backface-visibility: hidden;
+     transition: 0.5s;
+ }
+ 
+ .social ul li:hover  span{
+     opacity: 1;
+     backface-visibility: visible;
+     left: 50px;
+ }
+
+
+ /* Style buttons */
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  #btn  a{
+    color: #ffffff;
+  }
+
+  #btn{
+    margin-left: 2%;
+  }
+
+  .leaflet-control-geocoder, .leaflet-routing-collapse-btn::after{
+    display: none;
+  }
+  .leaflet-control-custom .toggle-button {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 2px;
+    padding: 4px 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .leaflet-routing-container{
+      width: 300px !important;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .leaflet-routing-container{
+      width: 300px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .leaflet-routing-container{
+      width: 300px !important;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .leaflet-routing-container{
+      width: 250px !important;
+    }
+    .leaflet-popup-content-wrapper{
+      width: 250px !important;
+      height: 200px !important;
+    }
+    .leaflet-popup-content{
+      display: relative !important;
+    }
+    .image-container {
+      float: left;
+      width: 70%;
+    }
+    .image-container img{
+      width: 140px !important;
+      height: 80px !important;
+    }
+    .buttons-container {
+      float: left;
+      width: 30%;
+    }
+    .buttons-container button{
+      width: 70px;
+      height: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 12px;
+      margin-bottom: 5%;
+    }
+
+    .social ul li a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+  }
+
+  .social ul li a span {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+  }
+
+  @media (max-width: 575px) {
+    .leaflet-routing-container{
+      width: 250px !important;
+    }
+    .leaflet-popup-content-wrapper{
+      width: 250px !important;
+      height: 200px !important;
+    }
+    .leaflet-popup-content{
+      display: relative !important;
+    }
+    .image-container {
+      float: left;
+      width: 70%;
+    }
+    .image-container img{
+      width: 140px !important;
+      height: 80px !important;
+    }
+    .buttons-container {
+      float: left;
+      width: 30%;
+    }
+    .buttons-container button{
+      width: 70px;
+      height: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 12px;
+      margin-bottom: 5%;
+    }
+
+    .social ul li a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+  }
+
+  .social ul li a span {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+  }
